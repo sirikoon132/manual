@@ -1,0 +1,26 @@
+{
+    "name": "sirikoon/manual",
+    "description": "Maunal Login Test",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "laravelcollective/html": "^6.0@dev"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Sirikoon\\Manual\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel":{
+            "dot-discover": [],
+            "provider": [
+                "Sirikoon\\Manual\\LoginServiceProvider"
+            ]
+        }
+    }
+}
